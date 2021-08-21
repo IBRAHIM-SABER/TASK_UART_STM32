@@ -23,6 +23,10 @@ u8 UART_u8SetUartConfigurations(const USART_Configs_t * Copy_structUartConfigs)
 	u8 LOC_u8ErrorState = STATE_OK;
 	if( Copy_structUartConfigs != NULL )
 	{
+		
+		
+		USARTx[Copy_structUartConfigs->UART_ChannelID]->CR1 = 0;
+		USARTx[Copy_structUartConfigs->UART_ChannelID]->CR2 = 0;
 		/* Disable the USART */
 		CLR_BIT(USARTx[Copy_structUartConfigs->UART_ChannelID]->CR1 , UE);
 		/* Set Baud Rate */
