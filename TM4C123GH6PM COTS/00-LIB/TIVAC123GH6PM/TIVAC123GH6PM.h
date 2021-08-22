@@ -43,6 +43,7 @@ typedef struct {
     volatile u32    PP              ;
     volatile u32    Reserved3       ;
     volatile u32    CC              ;
+    volatile u32    Reserved4       ;
     volatile u32    PeriphID_4_7[4] ;
     volatile u32    PeriphID_0_3[4] ;
     volatile u32    PCellID_0_3[4]  ;
