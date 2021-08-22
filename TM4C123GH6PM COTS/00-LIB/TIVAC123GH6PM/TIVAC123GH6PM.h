@@ -20,7 +20,6 @@
 #define UART6_BASE_ADDRESS          0x40012000
 #define UART7_BASE_ADDRESS          0x40013000
 
-
 typedef struct {
 
     volatile u32    DR              ;
@@ -42,6 +41,7 @@ typedef struct {
     volatile u32    BIT_9_AMASK     ;
     volatile u32    Reserved2[965]  ;
     volatile u32    PP              ;
+    volatile u32    Reserved3       ;
     volatile u32    CC              ;
     volatile u32    PeriphID_4_7[4] ;
     volatile u32    PeriphID_0_3[4] ;
