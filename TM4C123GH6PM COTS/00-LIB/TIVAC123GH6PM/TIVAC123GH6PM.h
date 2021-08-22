@@ -37,8 +37,10 @@ typedef struct {
     volatile u32    MIS             ;
     volatile u32    ICR             ;
     volatile u32    DMACTL          ;
+    volatile u32    Reserved1[22]   ;
     volatile u32    BIT_9_ADDR      ;
     volatile u32    BIT_9_AMASK     ;
+    volatile u32    Reserved2[965]  ;
     volatile u32    PP              ;
     volatile u32    CC              ;
     volatile u32    PeriphID_4_7[4] ;
